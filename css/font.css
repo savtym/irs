@@ -1,0 +1,14 @@
+@font-face {
+  font-family: HelveticaNeueCyr-Light;
+  src: local("HelveticaNeueCyr-Light"),
+    url(../fonts/HelveticaNeueCyr-Light.otf);
+}
+
+@font-face {
+  font-family: HelveticaNeueCyr-Medium;
+  src: local("HelveticaNeueCyr-Medium"),
+    url(../fonts/HelveticaNeueCyr-Medium.otf);
+}
+
+@font-face {   font-family: OpenSans-Regular;   src: local("OpenSans-
+Regular"),     url(../font/OpenSans-Regular.ttf); }

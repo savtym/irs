@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<script src="../script/jquery-2.0.2.min.js"></script>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../dist/css/lightbox.min.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="shortcut icon" href="../image/Shortcut.png">
+	<title>Контакты</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo"><a href="../index.html"></a></div>
+			<nav class="register">
+				<ul>
+					<li><a href="../index.html">Главная</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="research.html">Исследования</a></li>
+					<li><a href="photos.html">Фотогалерея</a></li>
+					<li class="active"><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<menu class="slider">
+		<a href="#">≡</a>
+	</menu>
+
+	<div class="contact">
+		<div class="container">
+			<div class="phone">
+				<h2>Наши данные</h2>
+				<p>+380674097407</p>
+				<p>+380953432777</p>
+				<p>+380445614973</p>
+				<a href="mailto:irslondon@hotmail.com">irslondon@hotmail.com</a>
+				<p>Skype: Alexo_1973</p>
+			</div>
+			<div class="form">
+				<h2>Напишите нам</h2>
+				<form action="../send.php" method="post">
+					<label for="name">Email:</label>
+					<input type="email" id="name" name="name" placeholder="example@mail" required>
+					<label for="text">Сообщение:</label>
+					<textarea name="text" id="text" placeholder="Текст..." required></textarea>
+					<input type="submit" value="Отправить">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="map">
+		<h2>Нас можно найти по здесь:</h2>
+		<div class="overlay" onClick="style.pointerEvents='none'"></div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.0908781512867!2d30.517517415328292!3d50.43940789604219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefef3dfec57%3A0x16980b7ef140870c!2z0LLRg9C70LjRhtGPINCg0L7Qs9C90ZbQtNC40L3RgdGM0LrQsCwgNCwg0JrQuNGX0LI!5e0!3m2!1sru!2sua!4v1469047606410" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+
+	<footer id="contact">
+		<div class="container">
+			<div><a href="#" class="logo"></a></div>
+			<div>
+				<h3>Copyright © 2016 International Rescue Services</h3>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+<script type="text/javascript">
+$(".slider a").click(function() {
+	event.preventDefault();
+	$("header").toggleClass("active");
+	$(".slider").toggleClass("active");
+})
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
