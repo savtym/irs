@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<script src="../script/jquery-2.0.2.min.js"></script>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../dist/css/lightbox.min.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="shortcut icon" href="../image/Shortcut.png">
+	<title>О нас</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo"><a href="../index.html"></a></div>
+			<nav class="register">
+				<ul>
+					<li><a href="../index.html">Главная</a></li>
+					<li class="active"><a href="#">О нас</a></li>
+					<li><a href="research.html">Исследования</a></li>
+					<li><a href="photos.html">Фотогалерея</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<menu class="slider">
+		<a href="#">≡</a>
+	</menu>
+	
+	<div class="contant-info">
+		<div class="container">
+			<h2>Планируемые основные  виды деятельности нашей компании:</h2>
+			<ul>
+				<li>Организация и строительство международного диспетчерского пункта  «INTERNATIONAL RESCUE SERVICES» с целью:
+					<ul>
+						<li>а) изучения и предотвращения возможных стихийных бедствий</li>
+						<li>б) связи с необходимыми международными организациями  как правительственные так и не правительственные для оперативного реагирования в случае возникновения чрезвычайных ситуаций</li>
+					</ul>
+				</li>
+				<li>Поиск пострадавших</li>
+				<li>Извлечение пострадавших</li>
+				<li>Транспортировка пострадавших</li>
+				<li>Оказание первой необходимой  медицинской помощи</li>
+				<li>Организация эвакуации пострадавших людей в безопасные зоны (временное  размещение пострадавших в мобильных пунктах временного проживания с предоставлением необходимых условий для  обеспечения жизнедеятельности человека)</li>
+				<li>Восстановительные работы  электросетей</li>
+				<li>Организация общестроительных работ</li>
+			</ul>
+			<h2>Для осуществления данных видов деятельности, нашими специалистами были разработаны:</h2>
+			<ul>
+				<li>Методологии (протоколы ликвидации последствий чрезвычайных происшествий), согласно классификации и характеристик.</li>
+				<li>Мобильные комплексы первой помощи пострадавшим (ППП):
+					<ul>
+						<li>а) ППП-1-Мобильный операционный блок</li>
+						<li>б) ППП-1-2-Мобильный блок «до» и «после» операционного размещения</li>
+						<li>в) ППП-2-Мобильный блок обогрева и временного проживания пострадавших</li>
+						<li>г) МПЭО – мобильный пункт энергообеспечения</li>
+						<li>д) МППП - мобильный пункт приготовления питания</li>
+					</ul>
+				</li>
+			</ul>
+			<p>А так же специальный инструмент, техника, оборудования и снаряжение необходимых для осуществления спасательных работ</p>
+		</div>
+	</div>
+
+	<footer id="contact">
+		<div class="container">
+			<div><a href="#" class="logo"></a></div>
+			<div>
+				<h3>Copyright © 2016 International Rescue Services</h3>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+	<script src="../script/jquery.appear.js"></script>
+
+<script type="text/javascript">
+$(document.body).on('appear', '.contant-info li', function(e, $affected) {
+    $(this).addClass("appeared");
+});
+$('.contant-info li').appear({force_process: true});
+
+$(".slider a").click(function() {
+	event.preventDefault();
+	$("header").toggleClass("active");
+	$(".slider").toggleClass("active");
+})
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
